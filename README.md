@@ -32,7 +32,7 @@ This application is built using a state-of-the-art modern React ecosystem, utili
 
 ### Build & Deployment
 - **[Vite 7](https://vitejs.dev/)** – Next-generation, lightning-fast frontend tooling.
-- **Cloudflare Workers** – Configured for high-speed, serverless edge deployment (`wrangler`).
+- **GoDaddy Hosting** – Used for production deployment and domain hosting.
 
 ---
 
@@ -104,21 +104,39 @@ saral-vidhya/
 
 ---
 
-## 🚀 Deployment (Cloudflare)
+## 🚀 Deployment (GoDaddy Hosting)
 
-This repository is pre-configured for seamless deployment to **Cloudflare Workers**. 
+This project is deployed using **GoDaddy Hosting**.
 
-1. Ensure you have the Cloudflare CLI (`wrangler`) installed and authenticated.
-2. Run the production build:
-   ```bash
-   npm run build
-   ```
-3. Deploy to the edge:
-   ```bash
-   wrangler deploy
-   ```
+### 📦 Production Build
 
----
+Run the following command to generate the optimized production build:
+
+```bash
+npm run build
+```
+
+### 🌐 Upload to GoDaddy
+
+1. Open your GoDaddy Hosting / cPanel dashboard.
+2. Navigate to **File Manager**.
+3. Open the `public_html` directory.
+4. Upload all files from the generated `dist` folder.
+5. Ensure `index.html` is placed directly inside `public_html`.
+
+### ✅ Domain Setup
+
+After uploading:
+- Connect your domain to the hosting account.
+- Enable SSL from GoDaddy settings if required.
+- Your website will be live on your domain.
+
+### 🛠 Tech Stack
+
+- React + Vite
+- TypeScript
+- Tailwind CSS
+- Hosted on GoDaddy
 
 ## 👨‍💻 Author & Contributions
 

@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import navLogo from "@/assets/saral-vidhya-logo-nav.png";
+import treeLogo from "@/assets/saral-vidhya-logo-tree.png";
 
 const NAV = [
-  { label: "Home", href: "#home" },
-  { label: "The Problem", href: "#problem" },
-  { label: "Solution", href: "#solution" },
-  { label: "Features", href: "#features" },
-  { label: "Parents", href: "#parents" },
+  { label: "Home", href: "/#home" },
+  { label: "The Problem", href: "/#problem" },
+  { label: "Solution", href: "/#solution" },
+  { label: "Features", href: "/#features" },
+  { label: "Parents", href: "/#parents" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export function Navbar() {
@@ -48,7 +49,7 @@ export function Navbar() {
             className="group flex items-center gap-2.5 shrink-0"
           >
             <motion.img
-              src={navLogo}
+              src={treeLogo}
               alt="Saral Vidhya"
               className="h-9 w-auto object-contain"
               whileHover={{ rotate: -8, scale: 1.15 }}

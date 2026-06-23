@@ -29,6 +29,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import logo from "@/assets/saral-vidhya-logo-clean.png";
+import treeLogo from "@/assets/saral-vidhya-logo-tree.png";
 
 /* ─── Shared Section Header ─── */
 function SectionHeader({
@@ -491,7 +492,6 @@ export function Gamification() {
 
         <div className="relative mx-auto max-w-6xl px-6">
           <SectionHeader
-            eyebrow="Unique Selling Propositions"
             title="Competitive by Design"
             subtitle="Adaptive, motivating, and balanced — built to keep every learner thriving."
           />
@@ -910,7 +910,7 @@ export function CTA() {
                     transition={{ duration: 0.8, delay: 0.3 }}
                   >
                     <motion.a
-                      href="mailto:admin@saralvidhya.com"
+                      href="mailto:info@saralvidhya.com"
                       className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-white px-7 py-4 text-sm font-medium text-primary shadow-lift"
                       whileHover={{ scale: 1.06 }}
                       whileTap={{ scale: 0.97 }}
@@ -944,7 +944,7 @@ export function Footer() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <img
-              src={logo}
+              src={treeLogo}
               alt="Saral Vidhya"
               className="h-10 w-10 object-contain"
             />
@@ -955,10 +955,10 @@ export function Footer() {
             experiences.
           </p>
           <a
-            href="mailto:admin@saralvidhya.com"
+            href="mailto:info@saralvidhya.com"
             className="group mt-5 inline-flex items-center gap-1 text-sm text-primary underline-offset-4 hover:underline"
           >
-            admin@saralvidhya.com
+            info@saralvidhya.com
             <ArrowRight className="h-3 w-3 opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100" />
           </a>
         </div>
